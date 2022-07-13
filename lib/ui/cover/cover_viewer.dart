@@ -20,7 +20,7 @@ class CoverViewer extends StatefulWidget {
   final String noCoverText;
 
   @override
-  _CoverViewerState createState() => _CoverViewerState();
+  State<CoverViewer> createState() => _CoverViewerState();
 }
 
 class _CoverViewerState extends State<CoverViewer> {
@@ -63,7 +63,7 @@ class _CoverViewerState extends State<CoverViewer> {
 
   void _checkIfCoverIsNull() {
     if (widget.controller.selectedCoverVal!.thumbData == null) {
-      widget.controller.generateDefaultCoverThumnail();
+      widget.controller.generateDefaultCoverThumbnail();
     }
   }
 
@@ -111,7 +111,7 @@ class _CoverViewerState extends State<CoverViewer> {
                               if (_layout != size) {
                                 _layout = size;
                                 // init the widget with controller values
-                                WidgetsBinding.instance!
+                                WidgetsBinding.instance
                                     .addPostFrameCallback((_) {
                                   _scaleRect();
                                 });

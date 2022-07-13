@@ -1,3 +1,17 @@
+## [1.4.3]
+
+- New `onError` param in export functions [#98](https://github.com/seel-channel/video_editor/pull/98)
+- New selectedIndicator param in `CoverSelectionStyle` [#97](https://github.com/seel-channel/video_editor/pull/97)
+- Update dependencies
+
+## [1.4.2]
+
+- Update to flutter 3 [#91](https://github.com/seel-channel/video_editor/pull/91)
+
+## [1.4.1]
+
+- Generated thumbnails list is not cleared after an exception [#88](https://github.com/seel-channel/video_editor/pull/88)
+
 ## [1.4.0]
 
 - Fix crop grid : gesture, aspect ratio, and painting area [#87](https://github.com/seel-channel/video_editor/pull/87)
